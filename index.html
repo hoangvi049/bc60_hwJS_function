@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="./style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container main">
+
+        <ul class="nav nav-tabs col-lg-2" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#bai1">Bài 1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#bai2">Bài 2</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#bai3">Bài 3</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#bai4">Bài 4</a>
+            </li>
+        </ul>
+        <!-- Tab panes -->
+        <div class="tab-content col-lg-10">
+            <div id="bai1" class="container tab-pane active"><br>
+                <h3>Quản lý sinh viên</h3>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <small id="helpId" class="text-muted">Điểm chuẩn </small>
+                            <input type="number" name="" id="input1_1" class="form-control" placeholder=""
+                                aria-describedby="helpId">
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <small id="helpId" class="text-muted">Khu vực ưu tiên</small>
+                                <select class="form-control" id="select1_1">
+                                    <option value="0">Chọn Khu vực</option>
+                                    <option value="2">A</option>
+                                    <option value="1">B</option>
+                                    <option value="0.5">C</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <small id="helpId" class="text-muted">Đối tượng ưu tiên</small>
+                                <select class="form-control" id="select1_2">
+                                    <option value="0">Chọn đối tượng</option>
+                                    <option value="2.5">1</option>
+                                    <option value="1.5">2</option>
+                                    <option value="1">3</option>
+
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <small id="helpId" class="text-muted">Điểm môn thứ 1</small>
+                            <input type="number" name="" id="input1_2" class="form-control" placeholder=""
+                                aria-describedby="helpId">
+                        </div>
+                        <div class="col-md-4">
+                            <small id="helpId" class="text-muted">Điểm môn thứ 2</small>
+                            <input type="number" name="" id="input1_3" class="form-control" placeholder=""
+                                aria-describedby="helpId">
+                        </div>
+                        <div class="col-md-4">
+                            <small id="helpId" class="text-muted">Điểm môn thứ 3</small>
+                            <input type="number" name="" id="input1_4" class="form-control" placeholder=""
+                                aria-describedby="helpId">
+                        </div>
+
+                    </div>
+                    <button class="btn btn-primary w-5 my-4" id="result1">Kết quả</button>
+                    <div class="show_result">
+                        <div class="container">
+                            <div class="col-md-12">
+                                <p class="result"><span><i class="fa-solid fa-hand-point-right mx-2"></i></span><span
+                                        class="r1"></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div id="bai2" class="container tab-pane "><br>
+                <h3>Tính tiền điện</h3>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <small id="helpId" class="text-muted">Nhập họ tên </small>
+                            <input type="text" name="" id="input2_1" class="form-control" placeholder=""
+                                aria-describedby="helpId">
+                        </div>
+                        <div class="col-md-4">
+                            <small id="helpId" class="text-muted">Nhập số kw</small>
+                            <input type="number" name="" id="input2_2" class="form-control" placeholder=""
+                                aria-describedby="helpId">
+                        </div>
+                    </div>
+                    <button class="btn btn-primary w-5 my-4" id="result2">Tính tiền điện</button>
+                    <div class="show_result">
+                        <div class="container">
+                            <div class="col-md-12">
+                                <p class="result"><span><i class="fa-solid fa-hand-point-right mx-2"></i></span><span
+                                        class="r2"></span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="bai3" class="container tab-pane "><br>
+                <h3>TÍnh thuế thu nhập cá nhân</h3>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <small id="helpId" class="text-muted">Nhập họ tên </small>
+                            <input type="text" name="" id="input3_1" class="form-control" placeholder=""
+                                aria-describedby="helpId">
+                        </div>
+                        <div class="col-md-4">
+                            <small id="helpId" class="text-muted">Nhập thu nhập 1 năm</small>
+                            <input type="number" name="" id="input3_2" class="form-control" placeholder=""
+                                aria-describedby="helpId">
+                        </div>
+                        <div class="col-md-4">
+                            <small id="helpId" class="text-muted">Nhập số người phụ thuộc </small>
+                            <input type="number" name="" id="input3_3" class="form-control" placeholder=""
+                                aria-describedby="helpId">
+                        </div>
+                    </div>
+                    <button class="btn btn-primary w-5 my-4" id="result3">TÍnh Thuế</button>
+                    <div class="show_result">
+                        <div class="container">
+                            <div class="col-md-12">
+                                <p class="result"><span><i class="fa-solid fa-hand-point-right mx-2"></i></span><span
+                                        class="r3"></span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div id="bai4" class="container tab-pane "><br>
+                <h3>Tính diện tiền cáp</h3>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <small id="helpId" class="text-muted">Đối tượng </small>
+                                <select class="form-control" onchange="Visibilyty()" id="select5">
+                                    <option value="0">Chọn loại khách hàng</option>
+                                    <option value="1">Nhà dân</option>
+                                    <option value="2">Doanh nghiệp</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <small id="helpId" class="text-muted">Nhập mã khách hàng</small>
+                            <input type="text" name="" id="input5_1" class="form-control" placeholder=""
+                                aria-describedby="helpId">
+                        </div>
+                        <div class="col-md-4">
+                            <small id="helpId" class="text-muted">Số kênh cao cấp</small>
+                            <input type="number" name="" id="input5_2" class="form-control" placeholder=""
+                                aria-describedby="helpId">
+                        </div>
+                        <div class="col-md-4 d-none" id="hiddenChoice">
+                            <small id="helpId" class="text-muted">Số kết nối</small>
+                            <input type="number" name="" id="input5_3" class="form-control" placeholder=""
+                                aria-describedby="helpId">
+                        </div>
+                    </div>
+                    <button class="btn btn-primary w-5 my-4" id="result5">Tính tiền cáp</button>
+                    <div class="show_result">
+                        <div class="container">
+                            <div class="col-md-12">
+                                <p class="result"><span><i class="fa-solid fa-hand-point-right mx-2"></i></span><span
+                                        class="r4"></span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>

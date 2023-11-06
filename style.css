@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html, body{
+    font-family: 'Jost', sans-serif;
+}.main{
+    display: flex;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    width: 100%;
+    height: 30rem;
+    background-color: #ECF0F3;
+    padding: 0;
+    margin: 0;
+    box-shadow: 10px 5px 5px #D8DFE9;  
+}
+
+.nav{
+    display: block!important;
+    border: none;
+    text-align: center;
+    border: 0px solid;
+    padding: 10px;
+    box-shadow: 5px 5px 5px #D8DFE9;  
+}
+.nav .nav-item .nav-link.active{
+    background-color: #007BFF;
+    color: #ffff;
+    border-radius: 15px;
+}
+.tab-content{
+    background-position: center ;
+    background-size: cover;
+    height: auto;
+    background-image: url("./img/simple-green-blue-white-creative-business-powerpoint-background_520743f00b__960_540.avif");
+}
+.nav .nav-item .nav-link{
+    transition: .5s;
+}
+.nav .nav-item .nav-link:hover{
+    background-color: #007BFF;
+    color: #ffff;
+    border-radius: 15px;
+    
+}
+.result{
+    
+    width: 100%;
+    height: 3rem;
+    background-color: antiquewhite;
+    padding: .5rem;
+    border-radius: 0 34px;
+    font-size: 18px;
+}
