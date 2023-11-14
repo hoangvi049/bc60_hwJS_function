@@ -124,17 +124,21 @@ document.getElementById("result5").onclick = function () {
   let connect = document.getElementById("input5_3").value;
   connect = Number(connect);
   var fee;
-  if (type == 2) {
-    if (connect <= 10) {
-      fee = 15 + 75 + 50 * channel;
-    } else {
-      fee = 15 + 75 + (connect - 10) * 5 + 50 * channel;
-    }
-  } else if (type == 0) {
-    alert("Hãy chọn loại khách hàng");
-  } else {
-    fee = 4.5 + 20.5 + 7.5 * channel;
+  switch (type) {
+    case 0:
+      alert("Hãy chọn loại khách hàng");
+      break;
+    case 1:
+      fee = 4.5 + 20.5 + 7.5 * channel;
+      break;
+    case 2:
+      if (connect <= 10) {
+        fee = 15 + 75 + 50 * channel;
+      } else {
+        fee = 15 + 75 + (connect - 10) * 5 + 50 * channel;
+      }
   }
+
   fee = new Intl.NumberFormat("de-DE", {
     style: "currency",
     currency: "USD",
